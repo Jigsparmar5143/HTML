@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body bgcolor="lightgreen">
+    <!-- HTML Form Elements -->
+    <!-- <input> <label> <select> <textarea> <button> <fieldset> <legend> <datalist> <output> <option> <optgroup> -->
+
+    <form>
+        <fieldset>
+            <legend>HTML FORM</legend>
+            <!--There are a deferent types of value for inputbox in form creation-->
+            <!--1 text-type in inputbox-->
+
+            <!--1.form created with lable tag,See under -->
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            
+            <!--2.without lable tag used create a form,See under 2lines-->
+            Last name:
+            <input type="text" id="lname" name="lname"><br><br>
+            Username:
+            <input type="text" id="username" name="username"><br><br>
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+             <!--2 password-type in inputbox-->
+
+            Password:
+            <input type="password" id="pwd" name="pwd"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--3 Radio-type in inputbox-->
+            <input type="radio" id="html" name="fav_language" value="HTML">HTML<br><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">CSS<br><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">JavaScript<br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--4 Cheachbox-type in inputbox-->
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">I have a bike<br><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">I have a car<br><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">I have a boat<br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+            <!--5 Color-type in inputbox-->
+            Select your favorite color:
+            <input type="color" id="favcolor" name="favcolor"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--6 Date-type in inputbox-->
+             Birthday:
+            <input type="date" id="birthday" name="birthday"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--7 Date and time-type in inputbox-->
+             Birthday (date and time):
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--8 Email-type in inputbox-->
+             Enter your email:
+            <input type="email" id="email" name="email"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--9 file-type in inputbox-->
+             Select a file:
+            <input type="file" id="myfile" name="myfile"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->         
+            <!--10 month-type in inputbox-->
+             Birthday (month and year):
+            <input type="month" id="bdaymonth" name="bdaymonth"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+            <!--11 Number-type in inputbox-->
+             Quantity (between 1 and 5):
+            <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--12 Range-type in inputbox-->
+             Volume (between 0 and 50):
+            <input type="range" id="vol" name="vol" min="0" max="50"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--13 search-type in inputbox-->
+             Search Google:
+            <input type="search" id="gsearch" name="gsearch"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--14 tel-type in inputbox-->
+             Enter your phone number:
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--15 time-type in inputbox-->
+             Select a time:
+            <input type="time" id="appt" name="appt"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+             <!--16 Week-type in inputbox-->
+             Select a week:
+            <input type="week" id="week" name="week"><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+            Choose a car:
+            <select id="cars" name="cars" size="2" multiple>
+                <option>BMW</option>
+                <option>Farari</option>
+                <option>Range rover</option>
+                <option selected>Audi</option>
+            </select><br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------->            
+            <textarea name="message" rows="10" cols="30">
+        T       hello..!
+                How r u..?
+                My name is jig's parmar...
+                What's your name..?
+        </textarea><br><br>
+
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist><br><br>
+
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            <input type="submit" value="Submit">
+            <input type="reset">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
